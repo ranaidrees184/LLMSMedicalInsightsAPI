@@ -17,13 +17,15 @@ git clone https://github.com/ranaidrees184/LLMSMedicalInsightAPI.git
 cd LLMSMedicalInsightAPI
 
 2. Create a Virtual Environment (Recommended)
+   
 python -m venv venv
+
 source venv/bin/activate       # On Windows: venv\Scripts\activate
 
-3. Install Dependencies
+4. Install Dependencies
 pip install -r requirements.txt
 
-4. Run the Application
+5. Run the Application
 uvicorn app:app --reload
 
 
