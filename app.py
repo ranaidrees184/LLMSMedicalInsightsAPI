@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel,Field
 from dotenv import load_dotenv
 import google.generativeai as genai
 import os
@@ -273,3 +273,4 @@ Biomarkers:
     except Exception as e:
 
         raise HTTPException(status_code=500, detail=f"Prediction error: {str(e)}")
+
