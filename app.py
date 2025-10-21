@@ -25,21 +25,21 @@ MODEL_ID = "gemini-2.5-flash"
 
 # ---------------- Schema ----------------
 class BiomarkerRequest(BaseModel):
-    albumin: float
-    creatinine: float
-    glucose: float
-    crp: float
-    mcv: float
-    rdw: float
-    alp: float
-    wbc: float
-    lymphocytes: float
-    hb: float
-    pv: float
-    age: int
-    gender: str
-    height: float
-    weight: float
+    albumin: float = Field(default=3.2, description="Albumin level in g/dL")
+    creatinine: float = Field(default=1.4, description="Creatinine level in mg/dL")
+    glucose: float = Field(default=145, description="Glucose level in mg/dL")
+    crp: float = Field(default=12.0, description="C-reactive protein in mg/L")
+    mcv: float = Field(default=88, description="Mean corpuscular volume in fL")
+    rdw: float = Field(default=15.5, description="Red cell distribution width in %")
+    alp: float = Field(default=120, description="Alkaline phosphatase in U/L")
+    wbc: float = Field(default=11.8, description="White blood cell count in ×10^3/μL")
+    lymphocytes: float = Field(default=20, description="Lymphocyte percentage")
+    hb: float = Field(default=13.0, description="Hemoglobin in g/dL")
+    pv: float = Field(default=2.1, description="Plasma volume in L (converted internally if needed)")
+    age: int = Field(default=52, description="Patient age in years")
+    gender: str = Field(default="female", description="Gender of the patient")
+    height: float = Field(default=165, description="Height in cm")
+    weight: float = Field(default=70, description="Weight in kg")
 
 
 # ---------------- Cleaning Utility ----------------
@@ -271,4 +271,5 @@ Biomarkers:
         return cleaned_output
 
     except Exception as e:
+
         raise HTTPException(status_code=500, detail=f"Prediction error: {str(e)}")
