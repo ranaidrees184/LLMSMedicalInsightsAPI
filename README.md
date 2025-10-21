@@ -2,32 +2,41 @@ Health Insight API
 
 This repository contains the FastAPI-based backend for the Health Insight System.
 
-Getting Started
-Follow these steps to get a local copy up and running. 📋 Prerequisites
+##  Getting Started
+
+Follow these steps to get a local copy up and running.
+📋 Prerequisites
 
 Make sure you have the following installed:
+- Python 3.9+
+- pip (Python package manager)
 
-Python 3.9+
-fastapi
-pip (Python package manager)
-(Optional) Git for cloning the repository
 Installation
+1. Clone the Repository
+git clone https://github.com/ranaidrees184/LLMSMedicalInsightAPI.git
+cd LLMSMedicalInsightAPI
 
-Clone the Repository git clone https://github.com/ranaidrees184/LLMSMedicalInsightAPI.git cd LLMSMedicalInsightAPI
+2. Create a Virtual Environment (Recommended)
+python -m venv venv
+source venv/bin/activate       # On Windows: venv\Scripts\activate
 
-Create a Virtual Environment (Recommended) python -m venv venv source venv/bin/activate # On Windows: venv\Scripts\activate
+3. Install Dependencies
+pip install -r requirements.txt
 
-Install Dependencies pip install -r requirements.txt
+4. Run the Application
+uvicorn app:app --reload
 
-Run the Application uvicorn app.main:app --reload
 
-The API will start locally at: 👉 http://127.0.0.1:8000
+The API will start locally at:
+👉 http://127.0.0.1:8000
 
-Interactive API docs are available at: 👉 http://127.0.0.1:8000/docs
+Interactive API docs are available at:
+👉 http://127.0.0.1:8000/docs  
 
 Deployment (General Instructions)
 
-This API can run on any system that supports Python. To deploy it:
+This API can run on any system that supports Python.
+To deploy it:
 
 Copy all project files to your server or environment.
 
@@ -48,3 +57,4 @@ Once running, test endpoints via:
 Browser Swagger UI: http://127.0.0.1:8000/docs
 
 Curl/Postman: Send requests manually for validation.
+
