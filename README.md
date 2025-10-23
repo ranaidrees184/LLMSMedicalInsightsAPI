@@ -26,7 +26,7 @@ source venv/bin/activate       # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 5. Run the Application
-uvicorn app:app --reload
+python -m uvicorn app:app --reload --host 0.0.0.0 --port 8000
 
 
 The API will start locally at:
