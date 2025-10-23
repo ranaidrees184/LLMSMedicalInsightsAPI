@@ -13,7 +13,7 @@ Make sure you have the following installed:
 
 Installation
 1. Clone the Repository
-git clone https://github.com/ranaidrees184/LLMSMedicalInsightAPI.git
+git clone https://github.com/ranaidrees184/LLMSMedicalInsightsAPI.git
 cd LLMSMedicalInsightAPI
 
 2. Create a Virtual Environment (Recommended)
