@@ -1,6 +1,6 @@
-Health Insight API
+Health Insights API
 
-This repository contains the FastAPI-based backend for the Health Insight System.
+This repository contains the FastAPI-based backend for the Health Insights System.
 
 ##  Getting Started
 
@@ -14,7 +14,7 @@ Make sure you have the following installed:
 Installation
 1. Clone the Repository
 git clone https://github.com/ranaidrees184/LLMSMedicalInsightsAPI.git
-cd LLMSMedicalInsightAPI
+cd LLMSMedicalInsightsAPI
 
 2. Create a Virtual Environment (Recommended)
    
